@@ -1,8 +1,8 @@
 // Personalize the letter here
 const CONFIG = {
-  name: "Friend",
-  date: "May 17, 2026",
-  signature: "Someone who cares",
+  name: "tester",
+  date: "August 21, 2026",
+  signature: "idk bro",
 };
 
 const envelope = document.getElementById("envelope");
