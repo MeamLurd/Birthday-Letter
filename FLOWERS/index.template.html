@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <main class="stage">
+    <header class="intro" id="intro">
+      <p class="eyebrow">A little something for you</p>
+      <h1>Happy Birthday</h1>
+      <p class="subtitle">Tap the envelope when you're ready.</p>
+    </header>
+
+    <button class="envelope" id="envelope" type="button" aria-label="Open birthday letter">
+      <span class="envelope__shadow" aria-hidden="true"></span>
+      <span class="envelope__back" aria-hidden="true"></span>
+      <span class="envelope__letter" aria-hidden="true">
+        <span class="envelope__heart" aria-hidden="true">♥</span>
+      </span>
+      <span class="envelope__flap" aria-hidden="true"></span>
+      <span class="envelope__front" aria-hidden="true"></span>
+      <span class="envelope__seal" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </span>
+    </button>
+
+    <article class="letter" id="letter" hidden>
+      <div class="letter__paper">
+        <p class="letter__date">May 17, 2026</p>
+        <p class="letter__greeting">Dear <span class="name">Friend</span>,</p>
+
+        <div class="letter__body">
+          <p>
+            On your birthday, I wanted to give you more than a quick message —
+            a small place on the internet that holds a little warmth, just for you.
+          </p>
+          <p>
+            You make ordinary days feel brighter. Your laugh, your kindness,
+            the way you show up for people — all of it matters more than you know.
+          </p>
+          <p>
+            May this year bring you adventures you didn't plan for, rest when you need it,
+            and moments so good they make you pause and smile without thinking why.
+          </p>
+          <p class="letter__wish">
+            Wishing you a day as wonderful as you are.
+          </p>
+        </div>
+
+        <p class="letter__signoff">
+          With love,<br />
+          <span class="signature">Someone who cares</span>
+        </p>
+
+        <button class="letter__close" id="closeLetter" type="button">Fold the letter</button>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer" aria-hidden="true">
+    <span class="footer__petal">✿</span>
+    <span class="footer__petal">❀</span>
+    <span class="footer__petal">✿</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
